@@ -64,3 +64,17 @@ const sup15 = zucchine.filter((zucchina) => zucchina.lunghezza > 15);
 console.log(sup15);
 
 // Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+
+// Calcola quanto pesano tutte le zucchine < 15
+let pesoMin15 = 0;
+min15.forEach(zucchina => {
+    pesoMin15 += zucchina.peso;
+});
+console.log(pesoMin15);
+
+// Calcola quanto pesano tutte le zucchine > 15
+let pesoSup15 = 0;
+sup15.forEach(zucchina => {
+    pesoSup15 += zucchina.peso;
+});
+console.log(pesoSup15);
